@@ -1,0 +1,42 @@
+# mutation {
+#   createBook(input: {
+#     title: "Full Stack Dev",
+#     author: "Farzeen",
+#   }){
+#     _id,
+#     title,
+#     author
+#   }
+# }
+
+# query {
+#   getAllBooks {
+#     _id,
+#     title,
+#     author
+#   }
+# }
+
+# query {
+#   getBook(id: "687bce1ac4d0a8c2ca897315") {
+#     _id,
+#     title,
+#     author
+#   }
+# }
+
+# mutation {
+#   deleteBook(id: "687bcdbac4d0a8c2ca897312")
+# }
+
+mutation {
+  updateBook(input: {
+    id: "687bd02abf3ba6bb62bf2dd6"
+    title: "Fullstack development"
+    author:"Farzeen Ali"
+  }) {
+    _id,
+    title,
+    author
+  }
+}
